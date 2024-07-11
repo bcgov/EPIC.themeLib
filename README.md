@@ -1,0 +1,3 @@
+# Library for sharing MUI theme settings and design specs across different codebases in the EPIC system.
+
+More details and detailed steps will be added soon...
