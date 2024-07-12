@@ -11,10 +11,9 @@
   },
   "keywords": [],
   "author": "Nitheesh Ganesh <nitheesh.ganesh@aot-technologies.com>",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "dependencies": {
-    "@bcgov/bc-sans": "^2.1.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.16.0",
@@ -31,5 +30,12 @@
     "vite": "^5.3.3",
     "vite-plugin-dts": "^3.9.1",
     "vite-plugin-lib-inject-css": "^2.1.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitheesh-aot/EPIC.themeLib"
   }
 }
