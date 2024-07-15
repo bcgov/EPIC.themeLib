@@ -1,5 +1,5 @@
 {
-  "name": "@bcgov/EPIC.themeLib",
+  "name": "@bcgov/epic.theme",
   "version": "1.0.0",
   "main": "dist/epic.theme.umd.js",
   "module": "dist/epic.theme.es.js",
