@@ -1,5 +1,5 @@
 {
-  "name": "epic.theme",
+  "name": "@bcgov/EPIC.themeLib",
   "version": "1.0.0",
   "main": "dist/epic.theme.umd.js",
   "module": "dist/epic.theme.es.js",
@@ -36,6 +36,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nitheesh-aot/EPIC.themeLib"
+    "url": "git+https://github.com/nitheesh-aot/EPIC.themeLib.git"
   }
 }
