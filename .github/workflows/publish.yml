@@ -31,10 +31,6 @@ jobs:
           PACKAGE_VERSION=$(node -p "require('./package.json').version")
           echo "Package name: $PACKAGE_NAME"
           echo "Package version: $PACKAGE_VERSION"
-          if [[ ! $PACKAGE_NAME =~ ^@.+\/.+ ]]; then
-            echo "Error: Package name must be scoped with the repository owner, e.g., @owner/package"
-            exit 1
-          fi
 
       - name: Publish to npm
         run: npm publish
