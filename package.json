@@ -1,6 +1,6 @@
 {
-  "name": "@bcgov/epic.theme",
-  "version": "1.0.1",
+  "name": "epic.theme",
+  "version": "1.0.2",
   "main": "dist/epic.theme.umd.js",
   "module": "dist/epic.theme.es.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "Nitheesh Ganesh <nitheesh.ganesh@aot-technologies.com>",
   "license": "MIT",
-  "description": "",
+  "description": "Theme config package to be used across multiple EPIC repositories",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -37,5 +37,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bcgov/EPIC.themeLib.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/bcgov/EPIC.themeLib/issues"
+  },
+  "homepage": "https://github.com/bcgov/EPIC.themeLib#readme"
 }

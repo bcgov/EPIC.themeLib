@@ -37,8 +37,6 @@ jobs:
           fi
 
       - name: Publish to npm
-        run: |
-          npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-          npm publish --registry=https://registry.npmjs.org/
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
