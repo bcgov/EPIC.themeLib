@@ -31,11 +31,5 @@
     "vite-plugin-dts": "^3.9.1",
     "vite-plugin-lib-inject-css": "^2.1.1"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nitheesh-aot/EPIC.themeLib.git"
-  }
+  "repository": "https://github.com/bcgov/EPIC.themeLib"
 }
