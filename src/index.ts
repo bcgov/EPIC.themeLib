@@ -1,2 +1,9 @@
-import './fonts.css';
-export { default as createAppTheme } from './theme';
+import "./fonts.css";
+
+declare module "@mui/material/Button" {
+  interface ButtonPropsVariantOverrides {
+    dashed: true;
+  }
+}
+
+export { default as createAppTheme } from "./theme";

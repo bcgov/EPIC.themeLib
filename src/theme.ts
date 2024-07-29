@@ -1,25 +1,26 @@
 import { createTheme, ThemeOptions, Theme } from "@mui/material/styles";
-import Palette from "./palette";
+import { BCPalette, Palette } from "./palette";
 import TypographyStyles from "./typography";
 import ComponentStyles from "./components";
 
-import './fonts/BCSans-Bold.woff2';
-import './fonts/BCSans-Light.woff2';
-import './fonts/BCSans-Regular.woff2';
+import "./fonts/BCSans-Bold.woff2";
+import "./fonts/BCSans-Light.woff2";
+import "./fonts/BCSans-Regular.woff2";
+
 
 
 const baseThemeOptions: ThemeOptions = {
   palette: {
     primary: {
-      main: Palette.primary.main,
-      light: Palette.primary.light,
-      dark: Palette.primary.dark,
+      main: BCPalette.theme.primaryBlue.default,
+      light: BCPalette.theme.primaryBlue[10],
+      dark: BCPalette.theme.primaryBlue[90],
       contrastText: Palette.white,
     },
     secondary: {
-      main: Palette.secondary.main,
-      dark: Palette.secondary.dark,
-      light: Palette.secondary.light,
+      main: BCPalette.theme.primaryGold.default,
+      light: BCPalette.theme.primaryGold[10],
+      dark: BCPalette.theme.primaryGold[90],
       contrastText: Palette.black,
     },
     error: {
@@ -27,10 +28,20 @@ const baseThemeOptions: ThemeOptions = {
       dark: Palette.error.dark,
       light: Palette.error.light,
     },
-    
+    // ochre: {
+    //   main: "#E3D026",
+    //   light: "#E9DB5D",
+    //   dark: "#A29415",
+    //   contrastText: "#242105",
+    // },
+    text: {
+      primary: BCPalette.typography.primary,
+      secondary: BCPalette.typography.secondary,
+      disabled: BCPalette.typography.disabled,
+    }
   },
   components: ComponentStyles,
-  typography: TypographyStyles
+  typography: TypographyStyles,
 };
 
 const createAppTheme = (customOptions?: ThemeOptions): Theme => {
