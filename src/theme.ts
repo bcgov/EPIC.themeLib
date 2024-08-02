@@ -28,16 +28,17 @@ const baseThemeOptions: ThemeOptions = {
       dark: Palette.error.dark,
       light: Palette.error.light,
     },
-    // ochre: {
-    //   main: "#E3D026",
-    //   light: "#E9DB5D",
-    //   dark: "#A29415",
-    //   contrastText: "#242105",
-    // },
     text: {
       primary: BCPalette.typography.primary,
       secondary: BCPalette.typography.secondary,
       disabled: BCPalette.typography.disabled,
+    },
+    background: {
+      default: BCPalette.components.background.white,
+    },
+    common: {
+      white: BCPalette.theme.gray.white,
+      black: BCPalette.theme.gray[110],
     }
   },
   components: ComponentStyles,

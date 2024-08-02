@@ -40,9 +40,9 @@ export const TypographyStyles: TypographyOptions = {
     color: BCPalette.typography.primary,
   },
   subtitle1: {
+    fontWeight: 400,
     fontSize: "1.125rem",
     lineHeight: "1.5rem",
-    fontWeight: 400,
     color: BCPalette.typography.primary,
   },
   body1: {

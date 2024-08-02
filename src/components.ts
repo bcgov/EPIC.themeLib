@@ -9,6 +9,13 @@ const activeBorder = {
 };
 
 export const ComponentStyles: Components = {
+  MuiAppBar: {
+    styleOverrides: {
+      root: {
+        boxShadow: "0px 4px 8px 0px rgba(0, 0, 0, 0.10)",
+      }
+    }
+  },
   MuiAccordion: {
     styleOverrides: {
       root: {
