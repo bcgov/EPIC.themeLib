@@ -1,27 +1,22 @@
 import { createTheme, ThemeOptions, Theme } from "@mui/material/styles";
-import { BCPalette, Palette } from "./palette";
+import { Palette } from "./palette";
 import TypographyStyles from "./typography";
 import ComponentStyles from "./components";
-
-import "./fonts/BCSans-Bold.woff2";
-import "./fonts/BCSans-Light.woff2";
-import "./fonts/BCSans-Regular.woff2";
-
-
+import { BCDesignTokens } from "./designTokens";
 
 const baseThemeOptions: ThemeOptions = {
   palette: {
     primary: {
-      main: BCPalette.theme.primaryBlue.default,
-      light: BCPalette.theme.primaryBlue[10],
-      dark: BCPalette.theme.primaryBlue[90],
-      contrastText: Palette.white,
+      main: BCDesignTokens.themePrimaryBlue,
+      light: BCDesignTokens.themeBlue10,
+      dark: BCDesignTokens.themeBlue90,
+      contrastText: BCDesignTokens.typographyColorPrimaryInvert,
     },
     secondary: {
-      main: BCPalette.theme.primaryGold.default,
-      light: BCPalette.theme.primaryGold[10],
-      dark: BCPalette.theme.primaryGold[90],
-      contrastText: Palette.black,
+      main: BCDesignTokens.themePrimaryGold,
+      light: BCDesignTokens.themeGold10,
+      dark: BCDesignTokens.themeGold90,
+      contrastText: BCDesignTokens.typographyColorSecondaryInvert,
     },
     error: {
       main: Palette.error.main,
@@ -29,17 +24,17 @@ const baseThemeOptions: ThemeOptions = {
       light: Palette.error.light,
     },
     text: {
-      primary: BCPalette.typography.primary,
-      secondary: BCPalette.typography.secondary,
-      disabled: BCPalette.typography.disabled,
+      primary: BCDesignTokens.typographyColorPrimary,
+      secondary: BCDesignTokens.typographyColorSecondary,
+      disabled: BCDesignTokens.typographyColorDisabled,
     },
     background: {
-      default: BCPalette.components.background.white,
+      default: BCDesignTokens.surfaceColorBackgroundWhite,
     },
     common: {
-      white: BCPalette.theme.gray.white,
-      black: BCPalette.theme.gray[110],
-    }
+      white: BCDesignTokens.themeGrayWhite,
+      black: BCDesignTokens.themeGray110,
+    },
   },
   components: ComponentStyles,
   typography: TypographyStyles,

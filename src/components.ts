@@ -1,11 +1,12 @@
 import { Components } from "@mui/material";
-import { BCPalette, Palette } from "./palette";
+import { Palette } from "./palette";
 import { color, display, fontWeight, lineHeight } from "@mui/system";
+import { BCDesignTokens } from "./designTokens";
 
 const activeBorder = {
   boxShadow: "none",
   outlineOffset: ".125rem",
-  outline: `.125rem solid ${BCPalette.components.border.active}`,
+  outline: `.125rem solid ${BCDesignTokens.surfaceColorBorderActive}`,
 };
 
 export const ComponentStyles: Components = {
@@ -13,8 +14,8 @@ export const ComponentStyles: Components = {
     styleOverrides: {
       root: {
         boxShadow: "0px 4px 8px 0px rgba(0, 0, 0, 0.10)",
-      }
-    }
+      },
+    },
   },
   MuiAccordion: {
     styleOverrides: {
@@ -69,19 +70,23 @@ export const ComponentStyles: Components = {
             style = {
               ...style,
               ...{
-                backgroundColor: BCPalette.components.button.primary.default,
-                color: BCPalette.typography.primaryInvert,
+                backgroundColor:
+                  BCDesignTokens.surfaceColorPrimaryButtonDefault,
+                color: BCDesignTokens.typographyColorPrimaryInvert,
                 "&:hover": {
-                  backgroundColor: BCPalette.components.button.primary.hover,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorPrimaryButtonHover,
                   boxShadow: "none",
                 },
                 "&:active": {
                   ...activeBorder,
-                  backgroundColor: BCPalette.components.button.primary.default,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorPrimaryButtonDefault,
                 },
                 "&:disabled": {
-                  backgroundColor: BCPalette.components.button.primary.disabled,
-                  color: BCPalette.typography.disabled,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorPrimaryButtonDisabled,
+                  color: BCDesignTokens.typographyColorDisabled,
                 },
               },
             };
@@ -89,24 +94,26 @@ export const ComponentStyles: Components = {
             style = {
               ...style,
               ...{
-                backgroundColor: BCPalette.components.button.secondary.default,
-                border: `1px solid ${BCPalette.components.border.dark}`,
+                backgroundColor:
+                  BCDesignTokens.surfaceColorSecondaryButtonDefault,
+                border: `1px solid ${BCDesignTokens.surfaceColorBorderDark}`,
                 padding: "0.438rem 1rem",
-                color: BCPalette.typography.primary,
+                color: BCDesignTokens.typographyColorPrimary,
                 "&:hover": {
-                  backgroundColor: BCPalette.components.button.secondary.hover,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorSecondaryButtonHover,
                   boxShadow: "none",
                 },
                 "&:active": {
                   ...activeBorder,
                   backgroundColor:
-                    BCPalette.components.button.secondary.default,
+                    BCDesignTokens.surfaceColorSecondaryButtonDefault,
                 },
                 "&:disabled": {
                   backgroundColor:
-                    BCPalette.components.button.secondary.disabled,
-                  color: BCPalette.typography.disabled,
-                  borderColor: BCPalette.components.border.light,
+                    BCDesignTokens.surfaceColorSecondaryButtonDisabled,
+                  color: BCDesignTokens.typographyColorDisabled,
+                  borderColor: BCDesignTokens.surfaceColorBorderDefault,
                 },
               },
             };
@@ -114,19 +121,23 @@ export const ComponentStyles: Components = {
             style = {
               ...style,
               ...{
-                backgroundColor: BCPalette.components.button.danger.default,
-                color: BCPalette.typography.primaryInvert,
+                backgroundColor:
+                  BCDesignTokens.surfaceColorPrimaryDangerButtonDefault,
+                color: BCDesignTokens.typographyColorPrimaryInvert,
                 "&:hover": {
-                  backgroundColor: BCPalette.components.button.danger.hover,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorPrimaryDangerButtonHover,
                   boxShadow: "none",
                 },
                 "&:active": {
                   ...activeBorder,
-                  backgroundColor: BCPalette.components.button.danger.hover,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorPrimaryDangerButtonHover,
                 },
                 "&:disabled": {
-                  backgroundColor: BCPalette.components.button.danger.disabled,
-                  color: BCPalette.typography.disabled,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorPrimaryDangerButtonDisabled,
+                  color: BCDesignTokens.typographyColorDisabled,
                 },
               },
             };
@@ -138,22 +149,24 @@ export const ComponentStyles: Components = {
           style = {
             ...style,
             ...{
-              backgroundColor: BCPalette.components.button.secondary.default,
-              border: `1px solid ${BCPalette.components.button.danger.default}`,
+              backgroundColor:
+                BCDesignTokens.surfaceColorSecondaryButtonDefault,
+              border: `1px solid ${BCDesignTokens.surfaceColorPrimaryDangerButtonDefault}`,
               padding: "0.438rem 1rem",
-              color: BCPalette.typography.danger,
+              color: BCDesignTokens.typographyColorDanger,
               "&:hover": {
-                backgroundColor: BCPalette.status.danger.light,
+                backgroundColor: BCDesignTokens.supportSurfaceColorDanger,
                 boxShadow: "none",
               },
               "&:active": {
                 ...activeBorder,
-                backgroundColor: BCPalette.status.danger.light,
+                backgroundColor: BCDesignTokens.supportSurfaceColorDanger,
               },
               "&:disabled": {
-                backgroundColor: BCPalette.components.button.danger.disabled,
-                color: BCPalette.typography.disabled,
-                borderColor: BCPalette.components.border.light,
+                backgroundColor:
+                  BCDesignTokens.surfaceColorPrimaryDangerButtonDisabled,
+                color: BCDesignTokens.typographyColorDisabled,
+                borderColor: BCDesignTokens.surfaceColorBorderDefault,
               },
             },
           };
@@ -162,18 +175,19 @@ export const ComponentStyles: Components = {
             style = {
               ...style,
               ...{
-                background: BCPalette.components.button.tertiary.default,
-                color: BCPalette.typography.primary,
+                background: BCDesignTokens.surfaceColorTertiaryButtonDefault,
+                color: BCDesignTokens.typographyColorPrimary,
                 "&:hover": {
-                  background: BCPalette.components.button.tertiary.hover,
+                  background: BCDesignTokens.surfaceColorTertiaryButtonHover,
                   boxShadow: "none",
                 },
                 "&:active": {
                   ...activeBorder,
-                  backgroundColor: BCPalette.components.button.tertiary.hover,
+                  backgroundColor:
+                    BCDesignTokens.surfaceColorTertiaryButtonHover,
                 },
                 "&:disabled": {
-                  color: BCPalette.typography.disabled,
+                  color: BCDesignTokens.typographyColorDisabled,
                 },
               },
             };
@@ -181,13 +195,13 @@ export const ComponentStyles: Components = {
             style = {
               ...style,
               ...{
-                backgroundColor: BCPalette.components.button.tertiary.default,
-                color: BCPalette.typography.link,
+                backgroundColor: BCDesignTokens.surfaceColorTertiaryButtonHover,
+                color: BCDesignTokens.typographyColorLink,
                 textDecoration: "underline",
                 border: "none",
                 "&:active": activeBorder,
                 "&:disabled": {
-                  color: BCPalette.typography.disabled,
+                  color: BCDesignTokens.typographyColorDisabled,
                 },
               },
             };
@@ -195,18 +209,18 @@ export const ComponentStyles: Components = {
             style = {
               ...style,
               ...{
-                background: BCPalette.components.button.tertiary.default,
-                color: BCPalette.typography.danger,
+                background: BCDesignTokens.surfaceColorTertiaryButtonHover,
+                color: BCDesignTokens.typographyColorDanger,
                 "&:hover": {
-                  background: BCPalette.status.danger.light,
+                  background: BCDesignTokens.supportSurfaceColorDanger,
                   boxShadow: "none",
                 },
                 "&:active": {
                   ...activeBorder,
-                  backgroundColor: BCPalette.status.danger.light,
+                  backgroundColor: BCDesignTokens.supportSurfaceColorDanger,
                 },
                 "&:disabled": {
-                  color: BCPalette.typography.disabled,
+                  color: BCDesignTokens.typographyColorDisabled,
                 },
               },
             };
@@ -282,59 +296,58 @@ export const ComponentStyles: Components = {
         "& .MuiInputBase-root": {
           height: "2.5rem",
           fontSize: "1rem",
-          color: BCPalette.typography.primary,
-          backgroundColor: BCPalette.components.form.default,
+          color: BCDesignTokens.typographyColorPrimary,
+          backgroundColor: BCDesignTokens.surfaceColorFormsDefault,
           backgroundClip: "padding-box",
-          border: `1px solid ${BCPalette.components.border.light}`,
+          border: `1px solid ${BCDesignTokens.surfaceColorBorderDefault}`,
           borderRadius: ".25rem",
           boxShadow: "none",
           transition:
             "border-color .15s ease-in-out, box-shadow .15s ease-in-out",
         },
         "& .MuiInputBase-root:hover": {
-          borderColor: BCPalette.components.border.dark,
+          borderColor: BCDesignTokens.surfaceColorBorderDark,
         },
         "& .MuiInputBase-root:active": {
           ...activeBorder,
           ...{
-            borderColor: BCPalette.components.border.dark,
+            borderColor: BCDesignTokens.surfaceColorBorderDark,
           },
         },
         "& .MuiInputBase-root:focus-within": {
-          borderColor: BCPalette.components.border.active,
+          borderColor: BCDesignTokens.surfaceColorBorderActive,
         },
         "& .MuiInputBase-root fieldset": {
           display: "none",
         },
         "& .MuiInputBase-root.Mui-error": {
-          borderColor: BCPalette.typography.danger,
+          borderColor: BCDesignTokens.typographyColorDanger,
         },
         "& .MuiInputBase-root.Mui-disabled": {
-          backgroundColor: BCPalette.components.form.disabled,
+          backgroundColor: BCDesignTokens.surfaceColorFormsDisabled,
           outline: "none",
-          borderColor: BCPalette.components.border.light,
+          borderColor: BCDesignTokens.surfaceColorBorderDefault,
         },
         "& .MuiInputLabel-root": {
           position: "static",
           transform: "none",
           fontSize: "0.875rem",
           lineHeight: "21px",
-          marginBottom: ".5rem",
-          color: BCPalette.typography.secondary,
+          color: BCDesignTokens.typographyColorSecondary,
         },
         "& .MuiInputLabel-shrink": {
           transform: "none",
         },
         "& .MuiInputBase-root MuiInputAdornment-root": {
-          color: BCPalette.typography.primary,
+          color: BCDesignTokens.typographyColorPrimary,
         },
         "& .MuiFormHelperText-root": {
           fontSize: "0.875rem",
-          color: BCPalette.typography.secondary,
+          color: BCDesignTokens.typographyColorSecondary,
           marginLeft: "0",
         },
         "& .MuiFormHelperText-root.Mui-error": {
-          color: BCPalette.typography.danger,
+          color: BCDesignTokens.typographyColorDanger,
         },
       },
     },

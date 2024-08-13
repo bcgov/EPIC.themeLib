@@ -1,5 +1,7 @@
 # Library for sharing MUI theme settings and design specs across different codebases in the EPIC system.
 
+[![npm version](https://badge.fury.io/js/epic.theme.svg)](https://badge.fury.io/js/epic.theme)
+
 At the root folder of the frontend codebase of your repo, install the package using the following:
 ```bash
 npm i epic.theme --save

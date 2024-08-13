@@ -6,6 +6,6 @@ declare module "@mui/material/Button" {
   }
 }
 
-export { BCPalette } from "./palette";
+export { BCDesignTokens } from "./designTokens";
 
 export { default as createAppTheme } from "./theme";
