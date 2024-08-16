@@ -295,15 +295,19 @@ export const ComponentStyles: Components = {
       root: {
         "& .MuiInputBase-root": {
           height: "2.5rem",
-          fontSize: "1rem",
+          fontSize: BCDesignTokens.typographyFontSizeBody,
           color: BCDesignTokens.typographyColorPrimary,
           backgroundColor: BCDesignTokens.surfaceColorFormsDefault,
           backgroundClip: "padding-box",
           border: `1px solid ${BCDesignTokens.surfaceColorBorderDefault}`,
-          borderRadius: ".25rem",
+          borderRadius: BCDesignTokens.layoutBorderRadiusMedium,
           boxShadow: "none",
           transition:
             "border-color .15s ease-in-out, box-shadow .15s ease-in-out",
+        },
+        "& .MuiInputBase-root.MuiInputBase-sizeSmall": {
+          height: "2.25rem",
+          fontSize: BCDesignTokens.typographyFontSizeSmallBody,
         },
         "& .MuiInputBase-root:hover": {
           borderColor: BCDesignTokens.surfaceColorBorderDark,
@@ -352,7 +356,7 @@ export const ComponentStyles: Components = {
       },
     },
     defaultProps: {
-      size: "small",
+      size: "medium",
     },
   },
   MuiFormControl: {
@@ -364,7 +368,14 @@ export const ComponentStyles: Components = {
   },
   MuiLink: {
     defaultProps: {
-      color: Palette.primary.accent.main,
+      color: BCDesignTokens.typographyColorLink,
+    },
+  },
+  MuiIconButton: {
+    styleOverrides: {
+      root: {
+        color: BCDesignTokens.iconsColorPrimary
+      },
     },
   },
   MuiFormLabel: {

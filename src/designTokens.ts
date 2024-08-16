@@ -1,3 +1,13 @@
+/**
+ *
+ * Referenced from the Design Token Glossary of BC Designs
+ * https://www2.gov.bc.ca/gov/content/digital/design-system/foundations/design-tokens/glossary
+ *
+ * Token values are available to copy from :
+ * https://github.com/bcgov/design-system/blob/main/packages/design-tokens/dist/cjs/index.js
+ *
+ */
+
 export const BCDesignTokens = {
   surfaceOpacity0: 0,
   surfaceOpacity10: 0.1,
