@@ -9,3 +9,5 @@ declare module "@mui/material/Button" {
 export { BCDesignTokens } from "./designTokens";
 
 export { default as createAppTheme } from "./theme";
+
+export { EAOColors } from "./eaoColors";
